@@ -42,7 +42,7 @@ class ezproxy::params {
   $ticket_secretkey         = undef
   $expiredticket_url        = 'expired.html'
   $default_stanzas          = true
-  $include_files            = undef
+  $include_files            = []
   $stanzas                  = {}
   $remote_configs           = {}
   $manage_service           = true
