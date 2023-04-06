@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
 group :test do
-  gem "rake"
-  gem "puppet", ENV['PUPPET_VERSION'] || '~> 3.7.0'
+  gem "rake", ">= 12.3.3"
+  gem "puppet", ">= 6.25.1", ENV['PUPPET_VERSION'] || '~> 3.7.0'
   gem "rspec", '< 3.2.0'
   gem "rspec-puppet"
   gem "puppetlabs_spec_helper"
@@ -19,6 +19,6 @@ group :development do
 end
 
 group :system_tests do
-  gem "beaker"
-  gem "beaker-rspec"
+  gem "beaker", ">= 3.7.0"
+  gem "beaker-rspec", ">= 6.0.0"
 end
